@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "../nav/nav.css";
 import { AiOutlineHome, AiOutlineUser, AiOutlineMessage } from "react-icons/ai";
 import { FiAward } from "react-icons/fi";
-import { RiServiceLine } from "react-icons/ri";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -30,13 +29,6 @@ const Nav = () => {
         className={activeNav === "#experience" ? "active" : ""}
       >
         <FiAward />
-      </a>
-      <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
-      >
-        <RiServiceLine />
       </a>
       <a
         href="#contact"
